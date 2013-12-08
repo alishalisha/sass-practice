@@ -1,0 +1,60 @@
+// global variables
+
+$main-color: darkgray;
+$accent-color: pink;
+$main-darker: darken($main-color, 40%);
+$light-bg: #f4f4f4;
+$lessons-border: 2px solid $main-color;
+$highlight-bg: #fff0d4;
+
+// import bourbon mixins
+@import "bourbon";
+
+body {
+	font: {
+		size: 16px;
+		family: Arial;
+	}
+	color: $main-color;
+}
+
+h1 {
+	color: $accent-color;
+}
+
+h2 {
+	padding: none;
+	margin: 0;
+}
+
+.lessons {
+	margin: 0 auto;
+	width: 80%;
+	background-color: $light-bg;
+
+	.material {
+		color: $main-darker;
+		border-bottom: $lessons-border;
+		border-top: $lessons-border;
+		padding: 20px 10px;
+
+		&:first-child {
+			border-bottom: none;
+		}
+
+		&:last-child {
+			border-top: none;
+		}
+
+		&:hover {
+			background-color: $highlight-bg;
+		}
+	}
+
+	.lesson-number {
+		text-transform: uppercase;
+		letter-spacing: 1pt;
+		font-size: 0.7em;
+		color: gray;
+	}
+}
