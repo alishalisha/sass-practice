@@ -6,9 +6,22 @@ body {
 h1 {
   color: pink; }
 
-h2 {
+h1, h2, h3 {
   padding: none;
   margin: 0; }
+
+h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.8em; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%; }
+
+.title {
+  text-align: center;
+  padding: 20px 0 30px 0; }
 
 .lessons {
   margin: 0 auto;
@@ -17,12 +30,9 @@ h2 {
   .lessons .material {
     color: #434343;
     border-bottom: 2px solid darkgrey;
-    border-top: 2px solid darkgrey;
     padding: 20px 10px; }
     .lessons .material:first-child {
-      border-bottom: none; }
-    .lessons .material:last-child {
-      border-top: none; }
+      border-top: 2px solid darkgrey; }
     .lessons .material:hover {
       background-color: #fff0d4; }
   .lessons .lesson-number {
