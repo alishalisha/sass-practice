@@ -54,6 +54,7 @@ h3 {
 		color: $main-darker;
 		border-bottom: $lessons-border;
 		padding: 20px 10px;
+		transition: 0.3s ease-in-out;
 
 		&:first-child {
 			border-top: $lessons-border;
@@ -70,4 +71,8 @@ h3 {
 		font-size: 0.7em;
 		color: gray;
 	}
+}
+
+.open {
+	height: 300px;
 }
